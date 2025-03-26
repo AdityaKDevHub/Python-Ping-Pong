@@ -65,6 +65,7 @@ def main():
 	window = pygame.display.set_mode((970, 540))
 	pygame.display.set_caption("Python Ping Pong")
 	font = pygame.font.SysFont('comicsans', 50)
+	adminfont = pygame.font.SysFont('arial', 20)
 
 	player_score = opponent_score = 0
 	player = Paddle(window, 40, 190)
@@ -81,8 +82,10 @@ def main():
 
 		playertxt = font.render("Player", 1, (255, 255, 255))
 		opponenttxt = font.render("AI", 1, (255, 255, 255))
+		admintext = adminfont.render("Aditya VN Kadiyala", 1, (0, 255, 255))
 		window.blit(playertxt, (230, 0))
 		window.blit(opponenttxt, (640, 0))
+		window.blit(admintext, (10, 510))
 
 		for event in pygame.event.get():
 			if event.type == pygame.QUIT:
