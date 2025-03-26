@@ -6,6 +6,15 @@
 > ## Installation
 > Installation requires PyGame installed in your device. Tkinter is generally included in your Python distribution beforehand, but make sure you have it in your device.
 >
+> Install PyGame using:
+>  ```sh
+>  python -m pip install pygame
+>  ```
+> Install Tkinter using:
+>  ```sh
+>  python -m pip install tkinter
+>  ```
+>
 > You can either clone this repository via Git or download the .zip file from the green _Code_ button in the repository page. \
 Finally, you need to run ```main.py``` through Python to enter the game.
 
